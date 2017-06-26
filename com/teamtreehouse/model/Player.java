@@ -1,3 +1,4 @@
+//Chris Magesty
 package com.teamtreehouse.model;
 
 import java.io.Serializable;
