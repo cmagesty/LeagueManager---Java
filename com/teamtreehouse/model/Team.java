@@ -7,7 +7,7 @@ public class Team{
 	private List<Player> players;
 	
 	public Team(String teamName,String coach){
-			this.TeamName = teamName;
+			this.teamName = teamName;
 			this.coach = coach;	
 	}
 	
