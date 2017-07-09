@@ -83,7 +83,7 @@ public class League {
 						break;
           
 					case "0":
-              choice = "0";
+            System.exit(0);
 						break;
           
 					default:
@@ -197,15 +197,16 @@ public class League {
 							}
 							break;
 					case "0":
+              run();
 							break;
 					default:
-						System.out.printf("Invalid choixe%n");
+						System.out.printf("Invalid choice%n");
 				}
 			}catch(IOException ioe){
 				System.out.println("Invalid input!");
 				ioe.printStackTrace();
 			}
-		}while (!choice.equals("9"));
+		}while (!choice.equals("0"));
 	}
 
 	private void addPlayerToTeam(String teamName,Player player){
@@ -360,9 +361,7 @@ public class League {
 	 int counter=0;
 
 	  String[] st={"number","last name","first name","height","experience"};
-	/*	System.out.println();
-		System.out.printf("%7s  %-15s %-15s %7s %15s %n",st[0],st[1],st[2],st[3],st[4]);
-		System.out.println("--------------------------------------------------------------------------"); */			for(Player player:players){
+	  for(Player player:players){
 		  String s;
 			if (player.isPreviousExperience()){
 			   s="experienced";
